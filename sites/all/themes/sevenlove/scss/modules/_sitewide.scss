@@ -1,0 +1,24 @@
+#logo img {
+  @extend %center;
+  display: block;
+  width: 200px;
+}
+  
+.html {
+  background: url('../img/background-outer.png') repeat;
+}
+
+.site-main {
+  background: white;
+}
+
+.block-locale {
+  text-align: right;
+  li {
+    display: inline;
+  }
+}
+
+img {
+  width: 100%;
+}

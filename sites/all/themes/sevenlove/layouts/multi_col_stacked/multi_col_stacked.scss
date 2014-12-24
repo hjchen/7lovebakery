@@ -1,0 +1,35 @@
+/* CSS file for the multi-column stacked layout. */
+@import "susy";
+
+.panel-multi-col {
+  .three-panel-left,
+  .three-panel-middle {
+    @media (min-width: 640px) {
+      @include span(2 of 6);
+    }
+  }
+  .three-panel-right {
+    @media (min-width: 640px) {
+      @include span(2 of 6 last);
+    }
+  }
+  .two-panel-left {
+    @media (min-width: 640px) {
+      @include span(3 of 6);
+    }
+  }
+  .two-panel-right {
+    @media (min-width: 640px) {
+      @include span(3 of 6 last);
+    }
+  }
+}
+
+.panel-wrapper {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  margin: 1em 0;
+}

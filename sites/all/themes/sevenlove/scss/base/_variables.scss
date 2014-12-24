@@ -1,0 +1,147 @@
+// ==========
+// SASS VARIABLES
+// -----
+// Declare all the variables which will be used in your theme here.
+// Feel free to change the variable values and add your own variables
+// to this file as well.
+// ==========
+
+// ==========
+// BREAKPOINTS
+// -----
+// Sass map for breakpoints. You can add additional breakpoints to this map 
+// or change their variable names.
+//
+// USAGE:
+// -----
+// @include respond-above(small) {
+//   .test {
+//     css-property: value;
+//   }
+// }
+// ==========
+  
+$breakpoints: (
+  small:    320px,
+  medium:   720px,
+  large:    960px,
+  x-large:  1280px
+);
+
+// ==========
+// FONTS
+// ==========
+
+// Imported fonts
+@font-face {
+  font-family: 'Pacifico';
+  src: url('../fonts/pacifico-webfont.eot');
+  src: url('../fonts/pacifico-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/pacifico-webfont.woff2') format('woff2'),
+       url('../fonts/pacifico-webfont.woff') format('woff'),
+       url('../fonts/pacifico-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cuprum';
+  src: url('../fonts/cuprum-regular-webfont.eot');
+  src: url('../fonts/cuprum-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/cuprum-regular-webfont.woff2') format('woff2'),
+       url('../fonts/cuprum-regular-webfont.woff') format('woff'),
+       url('../fonts/cuprum-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Base font stacks
+$base-font: "Cuprum", Rockwell, serif;
+$header-font: "Pacifico", Brush Script MT, cursive;
+
+
+// Base font sizes and line heights
+$base-font-size: 20px;
+$base-line-height: 30px;
+$round-to-nearest-half-line: true;
+
+// Uses the `rem` unit for all vertical rhythm output
+$rhythm-unit: "rem";
+
+// Set typography sizes
+$text-sizing: (
+  deci: (
+    small: (
+      font-size: 0.8rem
+    )
+  ),
+  base: (
+    small: (
+      font-size: 0.8rem
+    ),
+    medium: (
+      font-size: 1rem
+    )
+  ),
+  deca: (
+    small: (
+      font-size: 1rem
+    ),
+    medium: (
+      font-size: 1.294rem
+    )
+  ),
+  hecto: (
+    small: (
+      font-size: 1.294rem
+    ),
+    medium: (
+      font-size: 1.618rem
+    ),
+  ),
+  kilo: (
+    small: (
+      font-size: 1.618rem
+    ),
+    medium: (
+      font-size: 2.094rem
+    ),
+  ),
+  mega: (
+    small: (
+      font-size: 2.094rem
+    ),
+    medium: (
+      font-size: 2.618rem
+    ),
+  ) 
+);
+
+// ==========
+// COLORS
+// -----
+// Set variables for colors.
+
+// USAGE:
+// -----
+// .test {
+//   background-color: color(color-name);
+// }
+// ==========
+
+$colors: (
+
+);
+
+// ==========
+// Z-INDEX
+// -----
+// Set variables for Z-index.
+// ==========
+$z-layers: (
+  exosphere: 50,
+  thermosphere: 40,
+  mesosphere: 30,
+  stratosphere: 20,
+  troposphere: 10
+);

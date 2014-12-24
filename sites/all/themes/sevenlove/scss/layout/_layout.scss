@@ -1,0 +1,18 @@
+.html {
+  min-width: 320px;
+}
+
+.site-main {
+  @include container(1140px);
+}
+
+.pane-block {
+  @extend %center;
+  width: 90%;
+  max-width: 740px;
+}
+
+.pane-views-panes {
+  width: 90%;
+  @extend %center;
+}

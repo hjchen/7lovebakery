@@ -1,0 +1,29 @@
+/* CSS file for the multi-column stacked layout. */
+@media (min-width: 640px) {
+  .panel-multi-col .three-panel-left,
+  .panel-multi-col .three-panel-middle {
+    width: 31.0344827586%;
+    float: left;
+    margin-right: 3.4482758621%; } }
+@media (min-width: 640px) {
+  .panel-multi-col .three-panel-right {
+    width: 31.0344827586%;
+    float: right;
+    margin-right: 0; } }
+@media (min-width: 640px) {
+  .panel-multi-col .two-panel-left {
+    width: 48.275862069%;
+    float: left;
+    margin-right: 3.4482758621%; } }
+@media (min-width: 640px) {
+  .panel-multi-col .two-panel-right {
+    width: 48.275862069%;
+    float: right;
+    margin-right: 0; } }
+
+.panel-wrapper {
+  margin: 1em 0; }
+  .panel-wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
