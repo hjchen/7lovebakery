@@ -596,8 +596,10 @@ input:not([type=submit]):not([type=file]) {
 img {
   width: 100%; }
 
-.block-menu li {
-  display: inline; }
+.block-menu {
+  text-align: center; }
+  .block-menu li {
+    display: inline-block; }
 
 .front .view-cakes img {
   border-radius: 50%; }
