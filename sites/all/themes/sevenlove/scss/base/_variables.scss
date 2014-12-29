@@ -22,8 +22,8 @@
 // ==========
   
 $breakpoints: (
-  small:    320px,
-  medium:   720px,
+  small:    480px,
+  medium:   640px,
   large:    960px,
   x-large:  1280px
 );
@@ -56,7 +56,7 @@ $breakpoints: (
 }
 
 // Base font stacks
-$base-font: "Cuprum", Rockwell, serif;
+$base-font: "Cuprum", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 $header-font: "Pacifico", Brush Script MT, cursive;
 
 
@@ -72,6 +72,9 @@ $rhythm-unit: "rem";
 $text-sizing: (
   deci: (
     small: (
+      font-size: 0.8rem
+    ),
+    medium: (
       font-size: 0.8rem
     )
   ),
@@ -130,7 +133,8 @@ $text-sizing: (
 // ==========
 
 $colors: (
-
+  mine-shaft: rgba(51, 51, 51, 1),
+  metallic-bronze: rgba(64, 39, 24, 1)
 );
 
 // ==========

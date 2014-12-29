@@ -1,0 +1,100 @@
+.responsive-menus.responsified {
+  clear: both;
+  width: 100%;
+}
+
+.responsive-menus.responsified span.toggler {
+  @extend %center;
+  padding: 0.5em;
+  display: block;
+  background: url('../img/background-button.png');
+  color: color(metallic-bronze);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px color(metallic-bronze);
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.responsive-menus.responsified.responsive-toggled span.toggler {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 1px solid color(metallic-bronze);
+  position: fixed;
+  top: 0;
+}
+
+.responsive-menus.responsified .responsive-menus-simple {
+  display: none;
+  width: 100%;
+  background: url('../img/background-button.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 2px 2px 2px color(metallic-bronze);
+}
+
+.responsive-menus.responsified.responsive-toggled .responsive-menus-simple,
+.responsive-menus.responsified.responsive-toggled .responsive-menus-simple ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.responsive-menus.responsified.responsive-toggled.absolute {
+  position: fixed;
+  top: 47px;
+  z-index: 999;
+}
+
+.responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple {
+  position: fixed;
+  top: 47px;
+  z-index: 999;
+}
+
+.responsive-menus.responsified .responsive-menus-simple li {
+  width: 100%;
+  display: block;
+  padding: 0;
+  margin: 0;
+  clear: both;
+  list-style: none;
+}
+
+.responsive-menus.responsified .responsive-menus-simple li a {
+  color: color(metallic-bronze);
+  display: block;
+  padding: 0.5em;
+  margin: 0;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  text-decoration: none;
+}
+
+.responsive-menus.responsified .responsive-menus-simple>li.last a {
+  border-bottom: none;
+}
+
+.responsive-menus.responsified .responsive-menus-simple li ul li a {
+  padding: 1em;
+}
+
+.responsive-menus.responsified .responsive-menus-simple li ul li ul li a {
+  padding: 1em;
+}
+
+.responsive-menus.responsified .responsive-menus-simple li ul {
+  display: block !important;
+  visibility: visible !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* Inactive rule */
+.responsive-menus span.toggler {
+  display: none;
+}

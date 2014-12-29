@@ -11,7 +11,8 @@
 Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
 
-    // Place your code here.
+    //Bug fix for label not displaying when using select or other on select options
+    $(".select-or-other .form-type-radios").find("label:first-of-type").removeClass("element-invisible");
 
   }
 };

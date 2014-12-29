@@ -16,6 +16,7 @@ $grid-background-baseline-height: $base-line-height;
 body {
   font-family: $base-font;
   @include responsive-text-size(base);
+  color: color(mine-shaft);
 }
 
 %h1, h1 {
@@ -54,6 +55,10 @@ body {
   margin: 0 auto rhythm(1);
 }
 
+.small {
+  @include responsive-text-size(deci);
+}
+
 p {
   margin-bottom: rhythm(1);
 }
@@ -66,4 +71,14 @@ ol {
 ul {
   list-style: disc;
   list-style-position: inside;
+}
+
+a {
+  text-decoration: none;
+  .front .view-cakes & {
+    color: white;
+  }
+  .block-menu & {
+    color: color(metallic-bronze);
+  }
 }

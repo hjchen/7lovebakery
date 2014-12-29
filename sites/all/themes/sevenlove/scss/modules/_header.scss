@@ -1,0 +1,91 @@
+.site-header {
+  background: url('../img/background-header.png') repeat;
+  border-bottom: 32px solid transparent;
+  border-image:url(../img/wave-border-2.svg) 32 round round;
+  padding-top: 0.5em;
+}
+
+#logo img {
+  @extend %center;
+  display: block;
+  width: 200px;
+}
+
+#block-block-3 {
+  text-align: center;
+  margin-top: 1em;
+  @include respond-above(medium) {
+    float: left;
+    margin-top: 0;
+  }
+  li:not(.block-configure) {
+    display: inline-block;
+    a {
+      @extend %image-replacement;
+      display: block;
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .facebook {
+    margin-left: 0;
+    background-image: url('../img/facebook.png');
+    background-size: cover;
+    @include respond-above(medium) {
+      margin-left: 1em;
+    }
+  }
+  .instagram {
+    background-image: url('../img/instagram.png');
+    background-size: cover;
+    margin-left: 1em;
+  }
+  .email {
+    background-image: url('../img/email.png');
+    background-size: cover;
+    margin-left: 1em;
+  }
+}
+
+.block-locale {
+  text-align: center;
+  margin-top: 0.5em;
+  @include respond-above(medium) {
+    float: right;
+    margin-top: 0;
+  }
+  li:not(.block-configure) {
+    display: inline-block;
+    a {
+      @extend %image-replacement;
+      display: block;
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .en {
+    background-image: url('../img/en-icon.png');
+    background-size: cover;
+    margin-right: 1em;
+  }
+  .zh-hant {
+    background-image: url('../img/zh-icon.png');
+    background-size: cover;
+    margin-right: 0;
+    @include respond-above(medium) {
+      margin-right: 1em;
+    }
+  }
+}
+
+.block-menu {
+  clear: both;
+  text-align: center;
+  @include respond-above(small) {
+    padding-top: 1em;
+  }
+  li {
+    display: inline-block;
+    margin: 0 1em;
+  }
+}

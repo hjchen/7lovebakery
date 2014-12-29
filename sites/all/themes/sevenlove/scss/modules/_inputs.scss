@@ -5,3 +5,36 @@ input:not([type=submit]):not([type=file]) {
   box-shadow: inset 0 1px 3px #ddd;
   border-radius: 4px;
 }
+
+input[type=radio].form-radio {
+  position:absolute; 
+  z-index:-1000;
+  visibliity: hidden;
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height:1px; 
+  width:1px; 
+  margin:-1px; 
+  padding:0; 
+  border:0;
+}
+
+input[type=radio].form-radio + label {
+  padding-left: 31px;
+  height: 26px; 
+  display: inline-block;
+  line-height: 26px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+input[type=radio].form-radio:checked + label {
+  background-position: 0 -26px;
+}
+
+label.option {
+  background-image: url('../img/radio-buttons.png');
+  user-select: none;
+}

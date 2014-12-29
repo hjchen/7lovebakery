@@ -1,6 +1,35 @@
-.front .view-cakes {
-  img {
-    border-radius: 50%;
+.front {
+  .view-cakes {
+    position: relative;
+    margin-bottom: 1em;
+    @include respond-above(medium) {
+      margin-bottom: 0;
+    }
+    .view-content {
+      filter: grayscale(1);
+      transition: all 500ms ease;
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+    .view-text {
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    img {
+      border-radius: 50%;
+      filter: brightness(0.6);
+      transition: background 0.1s ease-in-out;
+      box-shadow: 0px 7px 0px 0px color(metallic-bronze);
+      &:active {
+        padding-top: 1px;
+        margin-bottom: -1px;
+        box-shadow: 0px 1px 0px 0px color(metallic-bronze);
+      }
+    }
   }
 }
 
