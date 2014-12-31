@@ -32,4 +32,7 @@
     clear: both;
   }
   margin: 1em 0;
+  &:last-child {
+    margin: 0;
+  }
 }

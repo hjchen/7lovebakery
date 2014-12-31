@@ -64,13 +64,15 @@ p {
 }
 
 ol {
-  list-style: decimal;
-  list-style-position: inside;
+  list-style-type: decimal;
+  list-style-position: outside;
+  margin-left: 1em;
 }
 
 ul {
   list-style: disc;
-  list-style-position: inside;
+  list-style-position: outside;
+  margin-left: 1em;
 }
 
 a {
@@ -81,4 +83,13 @@ a {
   .block-menu & {
     color: color(metallic-bronze);
   }
+}
+
+strong {
+  font-weight: bold;
+  color: color(metallic-bronze);
+}
+
+em {
+  font-style: italic;
 }

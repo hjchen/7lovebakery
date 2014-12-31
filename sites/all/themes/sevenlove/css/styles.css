@@ -368,6 +368,18 @@ img {
   src: url("../fonts/cuprum-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cuprum-regular-webfont.woff2") format("woff2"), url("../fonts/cuprum-regular-webfont.woff") format("woff"), url("../fonts/cuprum-regular-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'Cuprum';
+  src: url("../fonts/cuprum-bold-webfont.eot");
+  src: url("../fonts/cuprum-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cuprum-bold-webfont.woff2") format("woff2"), url("../fonts/cuprum-bold-webfont.woff") format("woff"), url("../fonts/cuprum-bold-webfont.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Cuprum';
+  src: url("../fonts/cuprum-italic-webfont.eot");
+  src: url("../fonts/cuprum-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cuprum-italic-webfont.woff2") format("woff2"), url("../fonts/cuprum-italic-webfont.woff") format("woff"), url("../fonts/cuprum-italic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
 html {
   -moz-box-sizing: border-box;
        box-sizing: border-box; }
@@ -537,12 +549,14 @@ p {
   margin-bottom: 1.5rem; }
 
 ol {
-  list-style: decimal;
-  list-style-position: inside; }
+  list-style-type: decimal;
+  list-style-position: outside;
+  margin-left: 1em; }
 
 ul {
   list-style: disc;
-  list-style-position: inside; }
+  list-style-position: outside;
+  margin-left: 1em; }
 
 a {
   text-decoration: none; }
@@ -551,7 +565,15 @@ a {
   .block-menu a {
     color: #402718; }
 
-.pane-block, .pane-views-panes, #logo img, button, .responsive-menus.responsified span.toggler {
+strong {
+  font-weight: bold;
+  color: #402718; }
+
+em {
+  font-style: italic; }
+
+.pane-block, .pane-views-panes, #logo img, button,
+.button, .responsive-menus.responsified span.toggler, .contact-options li:before {
   float: none;
   margin-left: auto;
   margin-right: auto; }
@@ -598,7 +620,10 @@ a {
 .pane-views-panes {
   width: 90%; }
 
-input:not([type=submit]):not([type=file]) {
+input:not([type=submit]):not([type=file]),
+textarea,
+textarea:hover,
+textarea:focus {
   padding: 0.5em 0.6em;
   display: inline-block;
   border: 1px solid #ccc;
@@ -638,11 +663,22 @@ label.option {
           user-select: none; }
 
 .html {
-  background: url("../img/background-outer-2.png") repeat; }
+  background: url("../img/background-outer.png") repeat; }
+
+.page {
+  padding-top: 46px; }
+  @media screen and (min-width: 480px) {
+    .page {
+      padding-top: 0; } }
 
 .body-content {
   background: url("../img/background-inner.png") repeat;
   margin-top: 30px; }
+  .not-front .body-content {
+    padding: 1.5rem; }
+  @media screen and (min-width: 1140px) {
+    .body-content {
+      border-radius: 10px 10px 0 0; } }
 
 img {
   width: 100%; }
@@ -650,9 +686,10 @@ img {
 .site-header {
   background: url("../img/background-header.png") repeat;
   border-bottom: 32px solid transparent;
-  -webkit-border-image: url(../img/wave-border-2.svg) 32 round round;
-       -o-border-image: url(../img/wave-border-2.svg) 32 round round;
-          border-image: url(../img/wave-border-2.svg) 32 round round;
+  -webkit-border-image: url(../img/wave-border-3.svg) 32 round round;
+       -o-border-image: url(../img/wave-border-3.svg) 32 round round;
+          border-image: url(../img/wave-border-3.svg) 32 round round;
+  box-shadow: 0 5px 45px #000;
   padding-top: 0.5em; }
 
 #logo img {
@@ -760,7 +797,8 @@ img {
 .pane-block {
   margin-top: 1em; }
 
-button {
+button,
+.button {
   display: block;
   padding: 0.75em 1em;
   border-radius: 10px;
@@ -768,7 +806,8 @@ button {
           transition: background 0.1s ease-in-out;
   background: url("../img/background-button.png") repeat;
   box-shadow: 0px 3px 0px 0px #402718; }
-  button:active {
+  button:active,
+  .button:active {
     padding-top: calc(0.75em + 1px);
     margin-bottom: -1px;
     box-shadow: 0px 1px 0px 0px #402718; }
@@ -870,3 +909,229 @@ button {
 /* Inactive rule */
 .responsive-menus span.toggler {
   display: none; }
+
+table {
+  margin: 1em 0 1.5em 0;
+  min-width: 320px;
+  width: 100%; }
+  table tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd; }
+  table td:first-child {
+    padding-top: .5em; }
+    table td:first-child:before {
+      content: attr(data-th); }
+  table td:last-child {
+    padding-bottom: .5em; }
+  table td:before {
+    content: attr(data-th) ": ";
+    font-weight: bold;
+    display: inline-block;
+    width: 25%; }
+    @media screen and (min-width: 480px) {
+      table td:before {
+        display: none; } }
+
+td {
+  text-align: left;
+  display: block; }
+  @media screen and (min-width: 480px) {
+    td {
+      display: table-cell;
+      padding: .25em .5em; }
+      td:first-child {
+        padding-left: 0; }
+      td:last-child {
+        padding-right: 0; } }
+
+th {
+  text-align: left;
+  display: none; }
+  @media screen and (min-width: 480px) {
+    th {
+      display: table-cell;
+      padding: .25em .5em; }
+      th:first-child {
+        padding-left: 0; }
+      th:last-child {
+        padding-right: 0; } }
+
+/* Start: Recommended Isotope styles */
+/**** Isotope Filtering ****/
+.isotope-item {
+  z-index: 2; }
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1; }
+
+/**** Isotope Sorting ****/
+.isotope-element .isotope-sort {
+  display: none; }
+
+/**** Isotope CSS3 transitions ****/
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s; }
+
+.isotope {
+  -webkit-transition-property: height, width;
+  transition-property: height, width; }
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  transition-property: transform, opacity; }
+
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s; }
+
+/* End: Recommended Isotope styles */
+/* disable CSS transitions for isotope-containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+  transition: none; }
+
+.isotope-element a,
+.isotope-element a code {
+  color: #fff !important;
+  text-decoration: none;
+  -webkit-transition: none;
+  transition: none; }
+
+.isotope-element a:hover,
+.isotope-element a:hover code {
+  color: #fff; }
+
+.isotope-element a:active,
+.isotope-element a:active code {
+  color: #fff; }
+
+/**** Isotope styles ****/
+/* required for isotope-containers to inherit vertical size from window */
+html,
+body {
+  height: 100%; }
+
+.isotope-element {
+  width: 220px;
+  height: 220px;
+  margin: 15px 15px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  background: #bebebe;
+  color: #fff; }
+
+.isotope-element img {
+  width: 220px;
+  margin: 0 auto;
+  text-align: center; }
+
+.variable-sizes .isotope-element.width2 {
+  width: 230px; }
+
+.variable-sizes .isotope-element.height2 {
+  height: 230px; }
+
+.variable-sizes .isotope-element.width2.height2 {
+  font-size: 2.0em; }
+
+.isotope-element.large,
+.variable-sizes .isotope-element.large,
+.variable-sizes .isotope-element.large.width2.height2 {
+  font-size: 3.0em;
+  width: 350px;
+  height: 350px;
+  z-index: 100; }
+
+.clickable .isotope-element:hover {
+  cursor: pointer; }
+
+.clickable .isotope-element:hover h3 {
+  text-shadow: 0 0 10px white, 0 0 10px white; }
+
+.clickable .isotope-element:hover h2 {
+  color: white; }
+
+/**** Example Filters ****/
+.isotope-options {
+  background-color: #EEEEEE; }
+
+.view-isotope-example ul {
+  list-style: none outside none;
+  margin: 0; }
+
+.view-isotope-example li {
+  display: block;
+  padding: 3px 10px;
+  text-align: center;
+  float: left; }
+
+.view-isotope-example li a {
+  border-radius: 3px;
+  padding: 3px 5px; }
+
+.view-isotope-example li a:hover {
+  background: #DDDDDD; }
+
+.view-isotope-example li a.selected {
+  background: #CCCCCC; }
+
+.node-webform {
+  max-width: 705px; }
+  .node-webform input {
+    max-width: 435px; }
+
+.contact-options {
+  text-align: center;
+  margin-left: 0; }
+  .contact-options li {
+    display: inline-block;
+    max-width: 75px;
+    cursor: pointer; }
+    @media screen and (min-width: 480px) {
+      .contact-options li {
+        max-width: 100%; } }
+    .contact-options li:before {
+      content: "";
+      display: block;
+      width: 75px;
+      height: 75px; }
+      @media screen and (min-width: 480px) {
+        .contact-options li:before {
+          width: 100px;
+          height: 100px; } }
+      @media screen and (min-width: 640px) {
+        .contact-options li:before {
+          width: 150px;
+          height: 150px; } }
+  .contact-options .order {
+    float: left; }
+  .contact-options .hello {
+    float: right; }
+  .contact-options .order:before {
+    background: url("../img/cake.png");
+    background-size: cover; }
+  .contact-options .inquiry:before {
+    background: url("../img/question.png");
+    background-size: cover; }
+  .contact-options .hello:before {
+    background: url("../img/hello.png");
+    background-size: cover; }
+
+.cimb {
+  content: "";
+  display: inline-block;
+  height: 20px;
+  width: 135px;
+  background: url("../img/cimb.svg");
+  background-size: cover; }
+
+.site-footer {
+  background: url("../img/background-footer-2.png");
+  box-shadow: inset 0px 15px 90px -15px rgba(220, 135, 135, 0.75); }

@@ -1,4 +1,7 @@
-input:not([type=submit]):not([type=file]) {
+input:not([type=submit]):not([type=file]),
+textarea,
+textarea:hover,
+textarea:focus {
   padding: 0.5em 0.6em;
   display: inline-block;
   border: 1px solid #ccc;

@@ -1,0 +1,59 @@
+table {
+  margin: 1em 0 1.5em 0;
+  min-width: 320px;
+  width: 100%;
+  tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  td {
+    &:first-child {
+      padding-top: .5em;
+      &:before {
+        content: attr(data-th);
+      }
+    }
+    &:last-child {
+      padding-bottom: .5em;
+    }
+    &:before {
+      content: attr(data-th)": ";
+      font-weight: bold;
+      display: inline-block;
+      width: 25%;
+      @include respond-above(small) {
+        display: none;
+      }
+    }
+  }
+}
+   
+td {
+  text-align: left;
+  display: block;
+  @include respond-above(small) {
+    display: table-cell;
+    padding: .25em .5em;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+th {
+  text-align: left;
+  display: none;
+  @include respond-above(small) {
+    display: table-cell;
+    padding: .25em .5em;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
