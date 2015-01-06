@@ -15,6 +15,7 @@ features[filter][] = full_html
 features[metatag][] = global
 features[metatag][] = global:frontpage
 features[metatag][] = view
+features[variable][] = i18n_string_allowed_formats
 features[variable][] = pathauto_node_page_pattern
 features[variable][] = pathauto_node_pattern
 features[variable][] = theme_default
