@@ -58,6 +58,29 @@ function sevenlove_blocks_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['block-social_media'] = array(
+    'cache' => -1,
+    'css_class' => 'block-social-media',
+    'custom' => 0,
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
+    'machine_name' => 'social_media',
+    'module' => 'block',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'sevenlove' => array(
+        'region' => 'header',
+        'status' => 1,
+        'theme' => 'sevenlove',
+        'weight' => -10,
+      ),
+    ),
+    'title' => '<none>',
+    'visibility' => 0,
+  );
+
   $export['locale-language'] = array(
     'cache' => -1,
     'css_class' => '',

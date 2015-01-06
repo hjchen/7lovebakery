@@ -12,6 +12,7 @@ features[fe_block_boxes][] = site_footer
 features[fe_block_boxes][] = social_media
 features[fe_block_settings][] = block-site_copyright
 features[fe_block_settings][] = block-site_footer
+features[fe_block_settings][] = block-social_media
 features[fe_block_settings][] = locale-language
 features[fe_block_settings][] = system-main-menu
 features[features_api][] = api:2
