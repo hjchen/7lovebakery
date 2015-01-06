@@ -1431,6 +1431,9 @@ body {
     background: url("../img/hello.png");
     background-size: cover; }
 
+.form-managed-file img {
+  width: auto; }
+
 .cimb {
   content: "";
   display: inline-block;
