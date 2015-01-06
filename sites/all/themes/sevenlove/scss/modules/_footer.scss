@@ -1,11 +1,41 @@
 .site-footer {
-  background: 
-    /* top, transparent red, faked with gradient */ 
-    // linear-gradient(
-    //   rgba(200, 179, 179,.75), 
-    //   rgba(0, 0, 0, 0)
-    // ),
-    /* bottom, image */
-    url('../img/background-footer-2.png');
-    box-shadow: inset 0px 15px 90px -15px rgba(220, 135, 135, 0.75);
+  background: url('../img/background-footer.png');
+  box-shadow: inset 0px 15px 90px -15px rgba(220, 135, 135, 0.75);
+  p {
+    margin: 0;
+  }
+}
+
+.block-site-footer {
+  @extend %center;
+  max-width: 1140px;
+  .content {
+    margin: 0 auto;
+    overflow: auto;
+    padding: 1em 1.5em;
+  }
+}
+
+.footer-content {
+  padding-bottom: 1em;
+  &:last-child {
+    padding: 0;
+  }
+  @include respond-above(medium) {
+    @include span(1 of 3);
+    padding: 0;
+    &:last-child {
+      @include last;
+    }
+  }
+  ul {
+    margin: 0;
+  }
+  li {
+    list-style: none;
+  }
+}
+
+.block-copyright {
+  padding: 0 1em;
 }

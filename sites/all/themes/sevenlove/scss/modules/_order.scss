@@ -1,0 +1,139 @@
+.flavour-image {
+  margin-bottom: 1em;
+  @include respond-above(medium) {
+    @include span(1 of 3);
+  }
+}
+
+.base-flavour {
+  @include span(1 of 2);
+  @include respond-above(medium) {
+    @include span(1 of 3);
+  }
+}
+
+.fillings {
+  @include span(1 of 2 last);
+  @include respond-above(medium) {
+    @include span(1 of 3 last);
+  }
+}
+
+.specific {
+  clear: both;
+}
+
+.payment label {
+  display: inline-block;
+}
+
+.ordering {
+  text-align: center;
+  width: auto;
+  p {
+    margin: 0;
+  }
+  &:not(.last):after {
+    content: "";
+    display: block;
+    width: 85px;
+    height: 85px;
+    margin: 1em auto;
+    background: url('../img/down-arrow.png');
+    background-size: cover;
+  }
+}
+
+.step-1 p {
+  clear: both;
+}
+
+.method-wrapper-1 {
+  @include respond-above(small) {
+    @include span(1 of 4);
+  }
+}
+
+.method-wrapper-2 {
+  @include respond-above(small) {
+      @include span(3 of 4 last);
+  }
+}
+
+.method-1,
+.method-2 {
+  margin-left: 0;
+  li {
+    display: inline-block;
+    line-height: 1.2em;
+    @include respond-above(small) {
+      max-width: 100%;
+    }
+    &:before {
+      @extend %center;
+      content: "";
+      display: block;
+      width: 85px;
+      height: 85px;
+    }
+  }
+}
+
+.form:before {
+  background: url('../img/order-form.png');
+  background-size: cover;
+}
+
+.email:before {
+  background: url('../img/order-email.png');
+  background-size: cover;
+}
+
+.wechat {
+  margin: 0 1%;
+  &:before {
+    background: url('../img/order-wechat.png');
+    background-size: cover;
+  }
+}
+
+.line:before {
+  background: url('../img/order-line.png');
+  background-size: cover;
+}
+
+.ordering span {
+  display: block;
+  text-align: center;
+  &:before {
+    @extend %center;
+    content: "";
+    display: block;
+    width: 85px;
+    height: 85px;
+  }
+}
+
+.ordering.last span:before {
+  width: 186px;
+}
+
+.reply:before {
+  background: url('../img/order-reply.png');
+  background-size: cover;
+}
+
+.confirm:before {
+  background: url('../img/order-confirm.png');
+  background-size: cover;
+}
+
+.baking:before {
+  background: url('../img/order-oven.png');
+  background-size: cover;
+}
+
+.collection:before {
+  background: url('../img/order-deliverpay.png');
+  background-size: cover;
+}

@@ -1,7 +1,9 @@
 <?php
-  /**
-   * Implements hook_form_FORM_ID_alter() for webform_client_form_267().
-   */
-  function sevenlove_form_webform_client_form_267_alter(&$form, &$form_state, $form_id) {
-    $form['actions']['submit']['#attributes']['class'][] = 'button';
+/**
+ * Implements hook_form_alter().
+ */
+function sevenlove_form_alter(&$form, &$form_state, $form_id) {
+  if (!empty($form['actions']) && $form['actions']['submit']) {
+    $form['actions']['submit']['#attributes'] = array('class' => array('button'));
   }
+}

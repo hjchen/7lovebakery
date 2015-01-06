@@ -38,9 +38,10 @@ body {
 }
 
 %h4, h4 {
-  font-family: $header-font;
+  font-family: $base-font;
   @include responsive-text-size(deca);
-  margin: 0 auto rhythm(1);
+  margin: rhythm(0.5) auto;
+  clear: both;
 }
 
 %h5, h5 {
@@ -73,6 +74,24 @@ ul {
   list-style: disc;
   list-style-position: outside;
   margin-left: 1em;
+}
+
+.body-content,
+.site-footer {
+  a {
+    color: color(mariner);
+    border-bottom: 1px dashed color(mariner);
+    &:hover {
+      border-bottom: 1px solid color(mariner);
+    }
+    &:visited {
+      color: color(deluge);
+      border-bottom: 1px dashed color(deluge);
+      &:hover {
+        border-bottom: 1px solid color(deluge);
+      }
+    }
+  }
 }
 
 a {

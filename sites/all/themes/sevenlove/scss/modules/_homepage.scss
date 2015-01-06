@@ -29,10 +29,26 @@
         margin-bottom: -1px;
         box-shadow: 0px 1px 0px 0px color(metallic-bronze);
       }
+      @include respond-above(small) {
+        display: block;
+        margin: 0 auto;
+        width: 75%;
+      }
+      @include respond-above(medium) {
+        width: 100%;
+      }
     }
   }
 }
 
 .pane-block {
-  margin-top: 1em;
+  margin-top: 1.5em;
+}
+
+.panel-wrapper-fourth {
+  @include respond-above(medium) {
+    width: 75%;
+    display: block;
+    margin: 1.5em auto;
+  }
 }

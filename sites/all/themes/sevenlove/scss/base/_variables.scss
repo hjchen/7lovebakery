@@ -24,7 +24,8 @@
 $breakpoints: (
   small:    480px,
   medium:   640px,
-  large:    1140px
+  large:    900px,
+  kraken:   1140px
 );
 
 // ==========
@@ -155,7 +156,10 @@ $text-sizing: (
 
 $colors: (
   mine-shaft: rgba(51, 51, 51, 1),
-  metallic-bronze: rgba(64, 39, 24, 1)
+  metallic-bronze: rgba(64, 39, 24, 1),
+  silver: rgba(204, 204, 204, 1),
+  mariner: rgba(36, 93, 193, 1),
+  deluge: rgba(119, 89, 174, 1)
 );
 
 // ==========

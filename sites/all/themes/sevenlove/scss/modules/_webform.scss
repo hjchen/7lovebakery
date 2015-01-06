@@ -1,7 +1,10 @@
 .node-webform {
   max-width: 705px;
   input {
-    max-width: 435px;
+    max-width: 100%;
+    @include respond-above(small) {
+      max-width: 435px;
+    }
   }
 }
 
@@ -12,6 +15,7 @@
     display: inline-block;
     max-width: 75px;
     cursor: pointer;
+    line-height: 1.2em;
     @include respond-above(small) {
       max-width: 100%;
     }
@@ -21,6 +25,7 @@
       display: block;
       width: 75px;
       height: 75px;
+      margin-bottom: 0.5em;
       @include respond-above(small) {
         width: 100px;
         height: 100px;

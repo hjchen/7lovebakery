@@ -15,13 +15,13 @@ Drupal.behaviors.my_custom_behavior = {
     $(".select-or-other .form-type-radios").find("label:first-of-type").removeClass("element-invisible");
 
     //Web form toggling
-    $(".webform-component--date-required, .webform-component--type-of-cake, .webform-component--flavour, .webform-component--message").hide();
+    $(".webform-component--date-required, .webform-component--type-of-cake, .webform-component--message, .webform-component--special-requests").hide();
     $('.webform-component--contact-options .order').click(function() {
       $(".webform-component--message").hide();
-      $(".webform-component--date-required, .webform-component--type-of-cake, .webform-component--flavour").show();
+      $(".webform-component--date-required, .webform-component--type-of-cake, .webform-component--special-requests").show();
     });
     $('.webform-component--contact-options .inquiry, .webform-component--contact-options .hello').click(function() {
-      $(".webform-component--date-required, .webform-component--type-of-cake, .webform-component--flavour, .webform-component--confectionery, .webform-component--quantity, .webform-component--size-of-cake").hide();
+      $(".webform-component--date-required, .webform-component--type-of-cake, .webform-component--confectionery, .webform-component--quantity, .webform-component--size-of-cake, .webform-component--special-requests").hide();
       $(".webform-component--message").show();
     });
   }

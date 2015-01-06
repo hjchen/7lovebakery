@@ -13,7 +13,7 @@
   background: url('../img/background-inner.png') repeat;
   margin-top: 30px;
   .not-front & {
-    padding: rhythm(1);
+    padding: 1.5em;
   }
   @include respond-above(large) {
     border-radius: 10px 10px 0 0;
@@ -22,4 +22,9 @@
 
 img {
   width: 100%;
+}
+
+hr {
+  border: 1px solid color(silver);
+  margin: 1em 0;
 }

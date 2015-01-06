@@ -1,14 +1,19 @@
-Place downloaded and custom themes that modify your site's appearance in this
-directory to ensure clean separation from Drupal core and to facilitate safe,
-self-contained code updates. Contributed themes from the Drupal community may
-be downloaded at http://drupal.org/project/themes.
+This directory structure contains the settings and configuration files specific
+to your site or sites and is an integral part of multisite configuration.
 
-It is safe to organize themes into subdirectories and is recommended to use
-Drupal's sub-theme functionality to ensure easy maintenance and upgrades.
+The sites/all/ subdirectory structure should be used to place your custom and
+downloaded extensions including modules, themes, and third party libraries.
 
-In multisite configuration, themes found in this directory are available to
-all sites. Alternatively, the sites/your_site_name/themes directory pattern may
-be used to restrict themes to a specific site instance.
+Downloaded installation profiles should be placed in the /profiles directory
+in the Drupal root.
 
-Refer to the "Appearance" section of the README.txt in the Drupal root
-directory for further information on theming.
+In multisite configuration, extensions found in the sites/all directory
+structure are available to all sites. Alternatively, the sites/your_site_name/
+subdirectory pattern may be used to restrict extensions to a specific
+site instance.
+
+See the respective README.txt files in sites/all/themes and sites/all/modules
+for additional information about obtaining and organizing extensions.
+
+See INSTALL.txt in the Drupal root for information about single-site
+installation or multisite configuration.
