@@ -59,7 +59,7 @@ function sevenlove_feeds_feeds_importer_default() {
           ),
           3 => array(
             'source' => 'Imgtitle',
-            'target' => 'field_image:title',
+            'target' => 'field_image:alt',
             'unique' => FALSE,
           ),
           4 => array(
@@ -138,7 +138,7 @@ function sevenlove_feeds_feeds_importer_default() {
           ),
           3 => array(
             'source' => 'Imgtitle',
-            'target' => 'field_image:title',
+            'target' => 'field_image:alt',
             'unique' => FALSE,
           ),
           4 => array(
@@ -212,7 +212,7 @@ function sevenlove_feeds_feeds_importer_default() {
           ),
           3 => array(
             'source' => 'Imgtitle',
-            'target' => 'field_image:title',
+            'target' => 'field_image:alt',
             'unique' => FALSE,
           ),
           4 => array(
@@ -291,7 +291,7 @@ function sevenlove_feeds_feeds_importer_default() {
           ),
           3 => array(
             'source' => 'Imgtitle',
-            'target' => 'field_image:title',
+            'target' => 'field_image:alt',
             'unique' => FALSE,
           ),
           4 => array(
@@ -370,7 +370,7 @@ function sevenlove_feeds_feeds_importer_default() {
           ),
           3 => array(
             'source' => 'Imgtitle',
-            'target' => 'field_image:title',
+            'target' => 'field_image:alt',
             'unique' => FALSE,
           ),
           4 => array(
