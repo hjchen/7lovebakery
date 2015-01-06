@@ -1442,6 +1442,12 @@ body {
   background: url("../img/cimb.svg");
   background-size: cover; }
 
+@media screen and (min-width: 480px) {
+  .baker {
+    max-width: 320px;
+    float: left;
+    margin-right: 1em; } }
+
 .site-footer {
   background: url("../img/background-footer.png");
   box-shadow: inset 0px 15px 90px -15px rgba(220, 135, 135, 0.75); }

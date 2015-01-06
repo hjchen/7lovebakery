@@ -6,3 +6,11 @@
   background: url('../img/cimb.svg');
   background-size: cover;
 }
+
+.baker {
+  @include respond-above(small) {
+    max-width: 320px;
+    float: left;
+    margin-right: 1em;
+  }
+}
