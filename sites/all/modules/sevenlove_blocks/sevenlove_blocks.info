@@ -1,0 +1,17 @@
+name = Blocks
+core = 7.x
+package = Seven love
+version = 7.x-1.0
+project = sevenlove_blocks
+dependencies[] = fe_block
+dependencies[] = locale
+features[fe_block_boxes][] = homepage_custom
+features[fe_block_boxes][] = homepage_standard
+features[fe_block_boxes][] = site_copyright
+features[fe_block_boxes][] = site_footer
+features[fe_block_boxes][] = social_media
+features[fe_block_settings][] = block-site_copyright
+features[fe_block_settings][] = block-site_footer
+features[fe_block_settings][] = locale-language
+features[fe_block_settings][] = system-main-menu
+features[features_api][] = api:2
