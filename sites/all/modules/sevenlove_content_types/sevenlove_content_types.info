@@ -47,6 +47,7 @@ features[field_instance][] = node-page-field_images
 features[field_instance][] = node-standard_cake-field_image
 features[field_instance][] = node-standard_cake-field_standard_cake_type
 features[field_instance][] = node-standard_cupcake-field_image
+features[image][] = banner
 features[image][] = cake
 features[image][] = homepage
 features[image][] = listing
