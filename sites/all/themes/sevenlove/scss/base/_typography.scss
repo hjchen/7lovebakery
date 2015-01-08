@@ -102,6 +102,12 @@ a {
   .block-menu & {
     color: color(metallic-bronze);
   }
+  .views-row & {
+    border: none;
+  }
+  .views-row:hover & {
+    border: none;
+  }
 }
 
 strong {

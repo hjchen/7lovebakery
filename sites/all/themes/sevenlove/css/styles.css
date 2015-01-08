@@ -580,6 +580,10 @@ a {
     color: white; }
   .block-menu a {
     color: #402718; }
+  .views-row a {
+    border: none; }
+  .views-row:hover a {
+    border: none; }
 
 strong {
   font-weight: bold;
@@ -903,7 +907,6 @@ button,
 .cake-gallery figure img {
   position: relative;
   display: block;
-  min-height: 100%;
   max-width: 100%;
   opacity: 0.8; }
 
