@@ -9,16 +9,7 @@
  */
 function sevenlove_translations_translations_defaults() {
   $translations = array();
-  $translations['zh-hant:blocks']['0be104df6916fb673d384830cab73976'] = array(
-    'source' => '<h2>Custom designed celebration cakes</h2><p>Need an idea for the perfect gift? Why not customise a cake unique to your loved one or special occasion? Just provide me a picture or photo of the theme or design you have in mind and I&#39;ll take care of the rest.</p>',
-    'context' => 'block:2:body',
-    'location' => 'blocks:block:2:body',
-    'translation' => '<h2>創意造型蛋糕</h2>
-<p>與親友共度別開生面的慶典。來一個獨特的造型蛋糕表達您的心意。您只要提供相片或主題，我將為您烘培別緻的造型蛋糕。</p>',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['zh-hant:blocks']['a273acfbd01bef158834d9fa07b63fde'] = array(
+  $translations['zh-hant:blocks']['10d88ad3498c5b25ca523b53a0586aab'] = array(
     'source' => '<div class="footer-content footer-about">
   <label>About 7Love Bakery</label>
   <p>I specialise in hand-made custom cakes and cupcakes. All my cakes are made to order just for you. Interested? <a href="contact">Contact me</a> to discuss your order.</p>
@@ -29,7 +20,7 @@ function sevenlove_translations_translations_defaults() {
   <ul class="contacts">
     <li class="wechat">Wechat: ast_0331</li>
     <li class="line">LINE: prettyang</li>
-    <li class="email">Email: <a href="mailto:ast_1119@hotmail.com">ast_1119@hotmail.com</a></li>
+    <li class="email">Email: <a href="mailto:ast_119@hotmail.com;">ast_119@hotmail.com</a></li>
   </ul>
 </div>
 
@@ -52,7 +43,7 @@ function sevenlove_translations_translations_defaults() {
   <ul class="contacts">
     <li class="wechat">微信: ast_0331</li>
     <li class="line">LINE: prettyang</li>
-    <li class="email">客服信箱: <a href="mailto:ast_1119@hotmail.com">ast_1119@hotmail.com</a></li>
+    <li class="email">客服信箱: <a href="mailto:ast_119@hotmail.com">ast_119@hotmail.com</a></li>
   </ul>
 </div>
 
@@ -66,8 +57,17 @@ function sevenlove_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['zh-hant:blocks']['c376a09c3d94d0a4c2b10c8c706df102'] = array(
+  $translations['zh-hant:blocks']['67b7e7b2cd2257e1374f3b22a3e13ed5'] = array(
     'source' => '<h2>Hand-made cakes and sweet treats</h2><p>Make someone&#39;s day better with a cake that tastes as good as it looks. All my cakes are lovingly baked from scratch, made fresh to order and contain no preservatives. I specialise in made-to-order cakes, cupcakes and confectionaries for all types of occasions. Or simply because you don&#39;t need a reason to enjoy cake.</p>',
+    'context' => 'block:2:body',
+    'location' => 'blocks:block:2:body',
+    'translation' => '<h2>創意造型蛋糕</h2>
+<p>與親友共度別開生面的慶典。來一個獨特的造型蛋糕表達您的心意。您只要提供相片或主題，我將為您烘培別緻的造型蛋糕。</p>',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['zh-hant:blocks']['7da87760a6e607ec9449e02fa3543449'] = array(
+    'source' => '<h2>Custom designed celebration cakes</h2><p>Need an idea for the perfect gift? Why not customise a cake unique to your loved one or special occasion? Just provide me a picture or photo of the theme or design you have in mind and I&#39;ll take care of the rest.</p>',
     'context' => 'block:1:body',
     'location' => 'blocks:block:1:body',
     'translation' => '<h2>歡迎光臨蛋糕亭</h2>
@@ -91,27 +91,19 @@ function sevenlove_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['zh-hant:menu']['228ab5eb00f149859e7c7f86fc98b424'] = array(
-    'source' => 'Home',
-    'context' => 'item:658:title',
-    'location' => 'menu:item:658:title',
-    'translation' => '主頁',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['zh-hant:menu']['e97504a95d5172338e1b3d38bad65f30'] = array(
-    'source' => 'Cake gallery',
-    'context' => 'item:659:title',
-    'location' => 'menu:item:659:title',
-    'translation' => '蛋糕庫',
-    'plid' => 0,
-    'plural' => 0,
-  );
   $translations['zh-hant:metatag']['2393f82a49c3bf8f7724f44f94809360'] = array(
     'source' => '[site:name] - Custom cakes, cupcakes and confectioneries',
     'context' => 'global:frontpage:title',
     'location' => 'metatag:global:frontpage:title',
     'translation' => '蛋糕亭',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['zh-hant:metatag']['62b6caf93492c4247b2611cdf2c056f8'] = array(
+    'source' => '[view:title] | [site:name]',
+    'context' => 'view:title',
+    'location' => 'metatag:view:title',
+    'translation' => '[view:title] | 蛋糕亭',
     'plid' => 0,
     'plural' => 0,
   );
@@ -123,91 +115,91 @@ function sevenlove_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['zh-hant:taxonomy']['20f34dec4f90f67d6d5b4103d3144121'] = array(
-    'source' => 'Sugar sheet cupcake',
-    'context' => 'term:25:name',
-    'location' => 'taxonomy:term:25:name',
-    'translation' => '糖紙紙杯蛋糕',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['zh-hant:taxonomy']['3cb1096a4642c80e9e8c14d4c46b0607'] = array(
-    'source' => 'Celebration cake',
-    'context' => 'term:1:name',
-    'location' => 'taxonomy:term:1:name',
-    'translation' => '慶典蛋糕',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['zh-hant:taxonomy']['3da8bf74fcbdf495e4ebef1ec919acf7'] = array(
-    'source' => 'Fondant cake',
-    'context' => 'term:21:name',
-    'location' => 'taxonomy:term:21:name',
-    'translation' => '翻糖蛋糕',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['zh-hant:taxonomy']['4da2dfa7318d9a6d33971db3227e7474'] = array(
-    'source' => 'Sugar sheet cake',
-    'context' => 'term:22:name',
-    'location' => 'taxonomy:term:22:name',
-    'translation' => '糖紙蛋糕',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['zh-hant:taxonomy']['6502ee7ca7b833bf22a7bfe32f4e21f4'] = array(
-    'source' => 'Custom cake',
-    'context' => 'vocabulary:5:name',
-    'location' => 'taxonomy:vocabulary:5:name',
-    'translation' => '造型蛋糕',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['zh-hant:taxonomy']['65d2e3024aa0aa64cd488c8259be06ce'] = array(
-    'source' => 'Custom cupcake',
-    'context' => 'vocabulary:6:name',
-    'location' => 'taxonomy:vocabulary:6:name',
-    'translation' => '造型紙杯蛋糕',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['zh-hant:taxonomy']['847f7cb7ec057768dd0d9cef5775e602'] = array(
-    'source' => 'Fondant cupcake',
-    'context' => 'term:24:name',
-    'location' => 'taxonomy:term:24:name',
-    'translation' => '翻糖紙杯蛋糕',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['zh-hant:taxonomy']['a9b550a23324518b775253393ace556b'] = array(
-    'source' => 'Icing cake',
-    'context' => 'term:23:name',
-    'location' => 'taxonomy:term:23:name',
-    'translation' => '糖霜蛋糕',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['zh-hant:taxonomy']['cb1e873279797a75d6dfb22964076798'] = array(
-    'source' => 'Standard cake',
-    'context' => 'vocabulary:2:name',
-    'location' => 'taxonomy:vocabulary:2:name',
-    'translation' => '一般蛋糕',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['zh-hant:taxonomy']['cf92187f3631f2ef45fbb8be2714d369'] = array(
+  $translations['zh-hant:taxonomy']['24ad8ddac289f423afa90ad550437cd4'] = array(
     'source' => 'Butter cake',
-    'context' => 'term:11:name',
-    'location' => 'taxonomy:term:11:name',
+    'context' => 'term:4:name',
+    'location' => 'taxonomy:term:4:name',
     'translation' => '奶油蛋糕',
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['zh-hant:taxonomy']['ff4354858eb0dfb80f70daefade70ba4'] = array(
+  $translations['zh-hant:taxonomy']['34abd6a78be1d9826f3cf86652e88505'] = array(
+    'source' => 'Sugar sheet cupcake',
+    'context' => 'term:2:name',
+    'location' => 'taxonomy:term:2:name',
+    'translation' => '糖紙紙杯蛋糕',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['zh-hant:taxonomy']['437e9369a57936247ef69033c9205908'] = array(
+    'source' => 'Celebration cake',
+    'context' => 'term:5:name',
+    'location' => 'taxonomy:term:5:name',
+    'translation' => '慶典蛋糕',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['zh-hant:taxonomy']['80eb02dea368933c0d2188a0ca1b1110'] = array(
+    'source' => 'Icing cake',
+    'context' => 'term:3:name',
+    'location' => 'taxonomy:term:3:name',
+    'translation' => '糖霜蛋糕',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['zh-hant:taxonomy']['86c10339a78bdb51e9c0affc7d5492d1'] = array(
+    'source' => 'Standard cake',
+    'context' => 'vocabulary:4:name',
+    'location' => 'taxonomy:vocabulary:4:name',
+    'translation' => '一般蛋糕',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['zh-hant:taxonomy']['88bc162a47814162a922025651d5328d'] = array(
+    'source' => 'Fondant cupcake',
+    'context' => 'term:7:name',
+    'location' => 'taxonomy:term:7:name',
+    'translation' => '翻糖紙杯蛋糕',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['zh-hant:taxonomy']['88c7a55d91e2923dfa91f96dc11e8c0e'] = array(
+    'source' => 'Sugar sheet cake',
+    'context' => 'term:8:name',
+    'location' => 'taxonomy:term:8:name',
+    'translation' => '糖紙蛋糕',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['zh-hant:taxonomy']['8ad44f0c205c76a759d310a43605f95e'] = array(
     'source' => 'Chiffon cake',
-    'context' => 'term:12:name',
-    'location' => 'taxonomy:term:12:name',
+    'context' => 'term:6:name',
+    'location' => 'taxonomy:term:6:name',
     'translation' => '威風蛋糕',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['zh-hant:taxonomy']['9061fe86e07c5b879f5cf7843ec0b56d'] = array(
+    'source' => 'Custom cupcake',
+    'context' => 'vocabulary:3:name',
+    'location' => 'taxonomy:vocabulary:3:name',
+    'translation' => '造型紙杯蛋糕',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['zh-hant:taxonomy']['d01f70d109acc5294a2adf325ba0cee8'] = array(
+    'source' => 'Fondant cake',
+    'context' => 'term:1:name',
+    'location' => 'taxonomy:term:1:name',
+    'translation' => '翻糖蛋糕',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['zh-hant:taxonomy']['fc110e08a522b31c73070dc1d2b4d628'] = array(
+    'source' => 'Custom cake',
+    'context' => 'vocabulary:2:name',
+    'location' => 'taxonomy:vocabulary:2:name',
+    'translation' => '造型蛋糕',
     'plid' => 0,
     'plural' => 0,
   );
@@ -671,6 +663,14 @@ function sevenlove_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['zh-hant:views']['9c05d17ec9e3d16321ceb1eecf404825'] = array(
+    'source' => 'There are no photos of this type of cake at the moment.',
+    'context' => 'cakes:default:empty:views:area:content',
+    'location' => 'views:cakes:default:empty:views:area:content',
+    'translation' => 'There are no photos of this type of cake at the moment.',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['zh-hant:views']['9dbc2eb41fba79ea38ce067d90a359fd'] = array(
     'source' => 'Apply',
     'context' => 'cakes:confectioneries:exposed_form:submit_button',
@@ -936,6 +936,20 @@ function sevenlove_translations_translations_defaults() {
     'context' => 'cakes:custom_cakes:exposed_form:sort_asc_label',
     'location' => 'views:cakes:custom_cakes:exposed_form:sort_asc_label',
     'translation' => 'Asc',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['zh-hant:views']['ebc06aa682faad43e7d835b26b9b15ec'] = array(
+    'source' => '[field_image]
+<div class="view-text">
+<h3>Cakes</h3>
+</div>',
+    'context' => 'cakes:cake_hp:field:field_data_field_image:field_image:alter:text',
+    'location' => 'views:cakes:cake_hp:field:field_data_field_image:field_image:alter:text',
+    'translation' => '[field_image]
+<div class="view-text">
+<h3>一般蛋糕</h3>
+</div>',
     'plid' => 0,
     'plural' => 0,
   );

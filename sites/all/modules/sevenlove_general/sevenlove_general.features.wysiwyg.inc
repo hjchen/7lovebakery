@@ -44,7 +44,6 @@ function sevenlove_general_wysiwyg_default_profiles() {
       'advanced__active_tab' => 'edit-basic',
       'forcePasteAsPlainText' => 0,
     ),
-    'rdf_mapping' => array(),
   );
 
   return $profiles;

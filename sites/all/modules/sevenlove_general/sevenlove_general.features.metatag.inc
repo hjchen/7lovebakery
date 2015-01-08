@@ -13,7 +13,6 @@ function sevenlove_general_metatag_export_default() {
   // Exported Metatag config instance: global.
   $config['global'] = array(
     'instance' => 'global',
-    'disabled' => FALSE,
     'config' => array(
       'title' => array(
         'value' => '[current-page:title] | [site:name]',
@@ -46,13 +45,27 @@ function sevenlove_general_metatag_export_default() {
       'shortlink' => array(
         'value' => '[site:url]',
       ),
+      'og:site_name' => array(
+        'value' => '[site:name]',
+      ),
+      'og:type' => array(
+        'value' => 'activity',
+      ),
+      'og:url' => array(
+        'value' => '[site:url]',
+      ),
+      'og:image' => array(
+        'value' => 'sites/all/themes/sevenlove/logo.png',
+      ),
+      'og:image:url' => array(
+        'value' => 'sites/all/themes/sevenlove/logo.png',
+      ),
     ),
   );
 
   // Exported Metatag config instance: view.
   $config['view'] = array(
     'instance' => 'view',
-    'disabled' => FALSE,
     'config' => array(
       'title' => array(
         'value' => '[view:title] | [site:name]',

@@ -48,7 +48,7 @@ function sevenlove_blocks_default_fe_block_boxes() {
   <ul class="contacts">
     <li class="wechat">Wechat: ast_0331</li>
     <li class="line">LINE: prettyang</li>
-    <li class="email">Email: <a href="mailto:ast_1119@hotmail.com">ast_1119@hotmail.com</a></li>
+    <li class="email">Email: <a href="mailto:ast_119@hotmail.com;">ast_119@hotmail.com</a></li>
   </ul>
 </div>
 
