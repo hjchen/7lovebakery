@@ -5,9 +5,9 @@ core = 7.x
 tags[] = developer
 dependencies[] = metatag
 
-; Information added by Drupal.org packaging script on 2015-01-06
-version = "7.x-1.4+27-dev"
+; Information added by Drupal.org packaging script on 2015-02-02
+version = "7.x-1.5-beta1"
 core = "7.x"
 project = "metatag"
-datestamp = "1420506202"
+datestamp = "1422885660"
 
