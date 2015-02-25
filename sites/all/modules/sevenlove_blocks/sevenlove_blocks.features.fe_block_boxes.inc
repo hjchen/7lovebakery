@@ -30,7 +30,7 @@ function sevenlove_blocks_default_fe_block_boxes() {
   $fe_block_boxes->info = 'Copyright';
   $fe_block_boxes->format = 'full_html';
   $fe_block_boxes->machine_name = 'site_copyright';
-  $fe_block_boxes->body = '<p><small>&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> 7Love Bakery All Rights Reserved</small></p>';
+  $fe_block_boxes->body = '<small>&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> 7Love Bakery All Rights Reserved&nbsp; &nbsp;|&nbsp; &nbsp;Designed by <a href="http://www.chenhuijing.com">Chen Hui Jing</a></small>';
 
   $export['site_copyright'] = $fe_block_boxes;
 
