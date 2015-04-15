@@ -59,3 +59,8 @@
 .form-managed-file img {
   width: auto;
 }
+
+// Bug fix for select or other duplicate header
+label[for="edit-submitted-size-of-cake"] {
+  display: none;
+}
