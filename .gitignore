@@ -49,3 +49,4 @@ Thumbs.db
 .sass-cache
 config.codekit
 sites/all/modules/devel
+sites/all/modules/stage_file_proxy
