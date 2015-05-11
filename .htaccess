@@ -131,6 +131,12 @@ DirectoryIndex index.php index.html index.htm
   # Rules to correctly serve gzip compressed CSS and JS files.
   # Requires both mod_rewrite and mod_headers to be enabled.
   <IfModule mod_headers.c>
+
+    # To resolve CORS error
+    <FilesMatch "\.(ttf|ttc|otf|eot|woff|font.css|css)$">
+      Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+    
     # Serve gzip compressed CSS files if they exist and the client accepts gzip.
     RewriteCond %{HTTP:Accept-encoding} gzip
     RewriteCond %{REQUEST_FILENAME}\.gz -s
