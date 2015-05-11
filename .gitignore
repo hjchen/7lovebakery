@@ -48,5 +48,9 @@ Thumbs.db
 ##########
 .sass-cache
 config.codekit
+
+# Development modules #
+##########################
 sites/all/modules/devel
 sites/all/modules/stage_file_proxy
+sites/all/modules/mail_redirect
