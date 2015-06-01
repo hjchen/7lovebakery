@@ -4,6 +4,11 @@
  * Implements hook_metatag_config_default().
  */
 function metatag_metatag_config_default() {
+  // Optionally skip loading the defaults.
+  if (!variable_get('metatag_load_defaults', TRUE)) {
+    return;
+  }
+
   $configs = array();
 
   $config = new stdClass();
@@ -168,7 +173,7 @@ function metatag_metatag_info() {
 
   $info['tags']['keywords'] = array(
     'label' => t('Keywords'),
-    'description' => t("A comma-separated list of keywords about the page. This meta tag is <em>not</em> supported by most search engines."),
+    'description' => t("A comma-separated list of keywords about the page. This meta tag is <em>not</em> supported by most search engines anymore."),
     'class' => 'DrupalTextMetaTag',
     'weight' => ++$weight,
   );
@@ -209,6 +214,46 @@ function metatag_metatag_info() {
     'description' => t("Highlight standout journalism on the web, especially for breaking news; used as an indicator in <a href=\"@google_news\">Google News</a>. Warning: Don't abuse it, to be used a maximum of 7 times per calendar week!", array('@google_news' => 'https://support.google.com/news/publisher/answer/191283?hl=en&ref_topic=2484650')),
     'class' => 'DrupalTextMetaTag',
     'group' => 'advanced',
+    'weight' => ++$weight,
+  );
+
+  $info['tags']['rating'] = array(
+    'label' => t('Content rating'),
+    'description' => t('Used to indicate the intended audience for the content.'),
+    'class' => 'DrupalTextMetaTag',
+    'group' => 'advanced',
+    'select_or_other' => TRUE,
+    'form' => array(
+      '#type' => 'select',
+      '#options' => array(
+        'general' => t('General'),
+        'mature' => t("Mature"),
+        'restricted' => t("Restricted"),
+        '14 years' => t("14 years or Older"),
+        'safe for kids' => t("Safe for kids"),
+      ),
+      '#empty_option' => t('- None -'),
+    ),
+    'weight' => ++$weight,
+  );
+
+  $info['tags']['referrer'] = array(
+    'label' => t('Referrer policy'),
+    'description' => t('Indicate to search engines and other page scrapers whether or not links should be followed. See <a href="http://w3c.github.io/webappsec/specs/referrer-policy/">the W3C specifications</a> for further details.'),
+    'class' => 'DrupalTextMetaTag',
+    'group' => 'advanced',
+    'select_or_other' => TRUE,
+    'form' => array(
+      '#type' => 'select',
+      '#options' => array(
+        'no-referrer' => t('No Referrer'),
+        'origin' => t('Origin'),
+        'no-referrer-when-downgrade' => t('No Referrer When Downgrade'),
+        'origin-when-cross-origin' => t('Origin When Cross-Origin'),
+        'unsafe-url' => t('Unsafe URL'),
+      ),
+      '#empty_option' => t('- None -'),
+    ),
     'weight' => ++$weight,
   );
 
@@ -261,6 +306,9 @@ function metatag_metatag_info() {
     'class' => 'DrupalLinkMetaTag',
     'group' => 'advanced',
     'weight' => ++$weight,
+    'replaces' => array(
+      'shorturl',
+    ),
     'devel_generate' => array(
       'type' => 'shortlink',
     ),
@@ -324,7 +372,7 @@ function metatag_metatag_info() {
 
   $info['tags']['revisit-after'] = array(
     'label' => t('Revisit After'),
-    'description' => t('Tell search engines when to index the page again. Very few search engines support this tag, it is more useful to use an <a href="@xmlsitemap">XML Sitemap</a> file.', array('@xmlsitemap' => 'http://drupal.org/project/xmlsitemap')),
+    'description' => t('Tell search engines when to index the page again. Very few search engines support this tag, it is more useful to use an <a href="@xmlsitemap">XML Sitemap</a> file.', array('@xmlsitemap' => 'https://www.drupal.org/project/xmlsitemap')),
     'class' => 'DrupalDateIntervalMetaTag',
     'group' => 'advanced',
     'weight' => ++$weight,
@@ -342,6 +390,38 @@ function metatag_metatag_info() {
     'element' => array(
       '#theme' => 'metatag_http_equiv',
     ),
+  );
+
+  $info['tags']['geo.position'] = array(
+    'label' => t('Geo position'),
+    'description' => t('Geo-spatial information in "latitude;longitude" format, e.g. "50.167958;-97.133185"; <a href="http://en.wikipedia.org/wiki/Geotagging#HTML_pages">see Wikipedia for details</a>.'),
+    'class' => 'DrupalTextMetaTag',
+    'group' => 'advanced',
+    'weight' => ++$weight,
+  );
+
+  $info['tags']['geo.placename'] = array(
+    'label' => t('Geo place name'),
+    'description' => t("A location's formal name."),
+    'class' => 'DrupalTextMetaTag',
+    'group' => 'advanced',
+    'weight' => ++$weight,
+  );
+
+  $info['tags']['geo.region'] = array(
+    'label' => t('Geo region'),
+    'description' => t("A location's two-letter international country code, with an optional two-letter region, e.g. \"US-NH\" for New Hampshire in the USA."),
+    'class' => 'DrupalTextMetaTag',
+    'group' => 'advanced',
+    'weight' => ++$weight,
+  );
+
+  $info['tags']['icbm'] = array(
+    'label' => t('ICBM'),
+    'description' => t('Geo-spatial information in "latitude, longitude" format, e.g. "50.167958, -97.133185"; <a href="http://en.wikipedia.org/wiki/ICBM">see Wikipedia for details</a>.'),
+    'class' => 'DrupalTextMetaTag',
+    'group' => 'advanced',
+    'weight' => ++$weight,
   );
 
   return $info;
